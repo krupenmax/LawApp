@@ -1,0 +1,44 @@
+:host {
+    width: 100%;
+    background-image: url("../../assets/photo_2022-09-06_11-32-05.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+
+}
+
+.hr-div {
+    width: 50%;
+}
+
+.description {
+    font-size: 20px;
+    text-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    background-color: #f44336; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 15px;
+    font-family: Roboto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 300;
+} 
