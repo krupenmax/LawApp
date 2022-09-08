@@ -1,0 +1,15 @@
+:host {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex-direction: column;
+}
+
+.main-header {
+    font-size: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

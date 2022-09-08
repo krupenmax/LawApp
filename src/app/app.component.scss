@@ -47,3 +47,13 @@ a {
     align-items: center;
     padding: 20px 20px;
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0px;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    font-weight: 600;
+}
