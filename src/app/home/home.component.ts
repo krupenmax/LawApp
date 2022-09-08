@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+declare let Email: any;
 
 @Component({
   selector: 'app-home',
@@ -8,6 +9,7 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 
   constructor() { }
+
 
 
 }
