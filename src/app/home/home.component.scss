@@ -27,6 +27,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
+    min-height: 700px;
 }
 
 .hr-div {
@@ -45,7 +46,6 @@ button {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     border-radius: 15px;
     font-family: Roboto;
@@ -55,10 +55,11 @@ button {
     font-weight: 300;
     -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    outline: none;
 } 
 
 button:hover {
-  box-shadow: 0 0 40px 40px #64251e inset;
+    box-shadow: 0 0 40px 40px #64251e inset, 0 0 5px 1px #330f0f;
 }
 
 .main-content {

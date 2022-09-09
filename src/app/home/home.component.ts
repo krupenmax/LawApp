@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-declare let Email: any;
+import { ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-home',
   styleUrls: ['./home.component.scss'],
   templateUrl: './home.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class HomeComponent {
 
-  constructor() { }
+  constructor(private cdr: ChangeDetectorRef) { }
 
 
 

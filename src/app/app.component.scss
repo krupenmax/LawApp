@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+
 }
 
 .routing-bar {
@@ -30,10 +31,14 @@
     text-align: center;
     font-size: 25px;
     text-shadow: 1px 1px 3px;
+    font-weight: 300;
+    
 }
 
 a:hover {
     box-shadow: 0 0 40px 40px #d8d8d896 inset;
+    letter-spacing: 1px;
+    transition: all .3s ease-in
 }
 
 a {
@@ -46,14 +51,20 @@ a {
     justify-content: center;
     align-items: center;
     padding: 20px 20px;
+    transition: all .2s ease-in
+}
+
+#last {
+    border-right: none;
 }
 
 .footer {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;    
     padding: 30px 0px;
     width: 100%;
-    background-color: rgb(235, 235, 235);
+    background-color: #fff;
     font-weight: 600;
+    border-top: solid #7a7a7a;
 }
