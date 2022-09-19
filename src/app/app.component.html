@@ -1,12 +1,78 @@
 <div class="main-header">
+  <div class="company-area">
+    <div class="company-name">Юридическое Бюро Валерии Харламовой</div> 
+    <div class="company-words">услуги правового характера для физических и юридических лиц</div>
+  </div>
   <div class="routing-bar">
-    <a routerLink="" class="home-button">Главная</a>
-    <a routerLink="about">О компании</a>
-    <a routerLink="services">Услуги</a>
-    <a routerLink="prices">Цены</a>
+    <a routerLink="" class="home-button">О компании</a>  
+    <div class="dropdown">
+      <button class="dropdown-btn">Виды помощи⮟</button>
+      <div class="dropdown-content">
+        <div class="dropdown-civil-div">
+          <a class="dropdown-civil-btn" routerLink="civil-div">
+            <b>Гражданские 🢒</b>
+          </a>
+          <div class="dropdown-civil">
+            <a>Консультирование</a>
+            <a>Досудебное урегулирование спора</a>
+            <a>Подготовка исков, ходатайства</a>
+            <a>Представление интересов в судах</a>
+            <a>Написание жалоб</a>
+          </div>
+        </div>
+        <div class="dropdown-livings-div">
+          <a class="dropdown-civil-btn" routerLink="livings-div">
+            <b>Жилищные 🢒</b>
+          </a>
+          <div class="dropdown-livings">
+            <a>Консультирование</a>
+            <a>Досудебное урегулирование спора</a>
+            <a>Подготовка исков, ходатайства</a>
+            <a>Представление интересов в судах</a>
+            <a>Написание жалоб</a>
+          </div>
+        </div>
+        <div class="dropdown-family-div">
+          <a class="dropdown-civil-btn" routerLink="family-div">
+            <b>Семейные 🢒</b>
+          </a>
+          <div class="dropdown-family">
+            <a>Консультирование</a>
+            <a>Определение правовой позиции</a>
+            <a>Подготовка исков, ходатайства</a>
+            <a>Представление интересов в судах</a>
+            <a>Написание жалоб</a>
+            <a><b>Помощь психолога</b></a>
+          </div>
+        </div>
+        <div class="dropdown-arbitrazh-div">
+          <a class="dropdown-arbitrazh-btn" routerLink="arbitrazh-div">
+            <b>Арбитражные 🢒</b>  
+          </a>
+          <div class="dropdown-arbitrazh">
+            <a>Консультирование</a>
+            <a>Составление претензии</a>
+            <a>Подготовка исков, ходатайств</a>
+            <a>Представление интересов в судах</a>
+            <a>Написание жалоб</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown-documents-div">
+      <a class="dropdown-documents-btn" routerLink="documents">
+        <b>Образцы документов⮟</b>  
+      </a>
+      <div class="dropdown-documents">
+        <a>Гражданские</a>
+        <a>Жилищные</a>
+        <a>Семейные</a>
+        <a>Арбитражные</a>
+      </div>
+    </div>
+    <a routerLink="prices" id="last">Прайс</a>
     <a routerLink="contacts" id="last">Контакты</a>
   </div>
-  <div class="company-name">Юридическое Бюро Валерии Харламовой</div>
 </div>
 <router-outlet></router-outlet>
 <div class="footer">All rights reserved, © Юридическое Бюро Валерии Харламовой</div>

@@ -16,28 +16,123 @@
 
 }
 
-.routing-bar {
-    width: 90%;
+.company-area {
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: left;
-    background-color: #fff;
-    padding-left: 10%;
+    flex-direction: column;
+    font-size: 15px;
     flex-basis: 50%;
 }
+
+.routing-bar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    flex-basis: 50%;
+    height: 100%;
+}
+
+.dropdown-btn, .dropdown-documents {
+    text-decoration: none;
+    font-size: 20px;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px;
+    transition: all .2s ease-in;
+    outline: none;
+    height: 100%;
+    border-style: none;
+    background-color: #fff;
+}
+
+.dropdown-btn:hover {
+    box-shadow: 0 0 40px 40px #d8d8d896 inset;
+    transition: all 0s ease-in;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-civil, .dropdown-livings, .dropdown-family, .dropdown-arbitrazh {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown-documents:hover {
+    display: block;
+}
+
+.dropdown-content, .dropdown-documents {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+}
+
+.dropdown-content, .dropdown-documents a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    background-color: #fff;
+    transition: all 0s ease-in;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-civil-div:hover .dropdown-civil {
+    display: block;
+    left: 100%;
+    top: 0%;
+}
+
+.dropdown-livings-div:hover .dropdown-livings {
+    display: block;
+    left: 100%;
+    top: 25%;
+}
+
+.dropdown-family-div:hover .dropdown-family {
+    display: block;
+    left: 100%;
+    top: 50%;
+}
+
+.dropdown-arbitrazh-div:hover .dropdown-arbitrazh {
+    display: block;
+    left: 100%;
+    top: 75%;
+}
+
+
 
 .company-name {
     flex-basis: 50%;
     text-align: center;
-    font-size: 25px;
-    text-shadow: 1px 1px 3px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 400;
     
 }
 
 a:hover {
     box-shadow: 0 0 40px 40px #d8d8d896 inset;
-    letter-spacing: 1px;
     transition: all .3s ease-in
 }
 
@@ -51,7 +146,9 @@ a {
     justify-content: center;
     align-items: center;
     padding: 20px 20px;
-    transition: all .2s ease-in
+    transition: all .2s ease-in;
+    outline: none;
+    height: 100%;
 }
 
 #last {
