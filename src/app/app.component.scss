@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+
 :host {
     align-items: center;
     display: flex;
@@ -35,7 +37,21 @@
     height: 100%;
 }
 
-.dropdown-btn, .dropdown-documents {
+.dropdown-documents-btn {
+    width: 100%;
+    padding: 20px 20px;
+}
+
+.dropdown-documents-div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown-documents-div a {
+    height: 100%;
     text-decoration: none;
     font-size: 20px;
     -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
@@ -43,13 +59,31 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 20px;
+    width: 100%;
+    transition: all .2s ease-in;
+    outline: none;
+    border-style: none;
+    background-color: #fff;
+    
+}
+
+.dropdown-btn {
+    font-family: 'Yanone Kaffeesatz';
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all .2s ease-in;
     outline: none;
     height: 100%;
-    border-style: none;
-    background-color: #fff;
+    width: 100%;
+    text-align: center;
 }
+
 
 .dropdown-btn:hover {
     box-shadow: 0 0 40px 40px #d8d8d896 inset;
@@ -60,6 +94,8 @@
 .dropdown {
     position: relative;
     display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 
 .dropdown-civil, .dropdown-livings, .dropdown-family, .dropdown-arbitrazh {
@@ -68,12 +104,28 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    width: 100%;
     text-align: center;
+    background-color: #fff;
 }
 
-.dropdown-documents:hover {
-    display: block;
+.dropdown-civil a {
+    padding: 12px 16px;
+    width: auto;
+}
+
+.dropdown-livings a {
+    padding: 12px 16px;
+    width: auto;
+}
+
+.dropdown-family a {
+    padding: 12px 16px;
+    width: auto;
+}
+
+.dropdown-arbitrazh a {
+    padding: 12px 16px;
+    width: auto;
 }
 
 .dropdown-content, .dropdown-documents {
@@ -87,13 +139,13 @@
 
 .dropdown-content, .dropdown-documents a {
     color: black;
-    padding: 12px 16px;
     text-decoration: none;
     background-color: #fff;
     transition: all 0s ease-in;
+    width: 100%;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content, .dropdown-documents:hover {
     display: block;
 }
 
@@ -121,14 +173,35 @@
     top: 75%;
 }
 
+.dropdown-civil-div a {
+    padding: 12px 10px;
+    width: auto;
+}
+
+.dropdown-family-div a {
+    padding: 12px 10px;
+    width: auto;
+}
+
+.dropdown-arbitrazh-div a {
+    padding: 12px 10px;
+    width: auto;
+}
+
+.dropdown-livings-div a {
+    padding: 12px 10px;
+    width: auto;
+}
+
+
 
 
 .company-name {
     flex-basis: 50%;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 400;
-    
+    font-family: 'Yanone Kaffeesatz';
 }
 
 a:hover {
@@ -137,18 +210,19 @@ a:hover {
 }
 
 a {
+    font-family: 'Yanone Kaffeesatz';
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 30px;
     -webkit-transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 20px;
     transition: all .2s ease-in;
     outline: none;
     height: 100%;
+    width: 100%;
 }
 
 #last {
