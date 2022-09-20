@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ServicesComponent } from './services.component';
+import { ArbitrazhHelpComponent } from './arbitrazh-help.component';
 
-describe('ServicesComponent', () => {
-  let component: ServicesComponent;
-  let fixture: ComponentFixture<ServicesComponent>;
+describe('ArbitrazhHelpComponent', () => {
+  let component: ArbitrazhHelpComponent;
+  let fixture: ComponentFixture<ArbitrazhHelpComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ServicesComponent ]
+      declarations: [ ArbitrazhHelpComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ServicesComponent);
+    fixture = TestBed.createComponent(ArbitrazhHelpComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
